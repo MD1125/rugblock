@@ -1,0 +1,1 @@
+# rugplay-ad-blocker
