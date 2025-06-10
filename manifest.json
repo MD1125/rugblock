@@ -1,13 +1,8 @@
 {
   "manifest_version": 3,
   "name": "RugBlock",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Blocks ads (or well just any comments) on Rugplay.com",
-  "permissions": [
-    "scripting",
-    "storage",
-    "webNavigation"
-  ],
   "action": {
     "default_popup": "popup.html",
     "default_title": "RugBlock",

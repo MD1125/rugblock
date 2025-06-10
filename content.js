@@ -130,7 +130,7 @@ function createAdBlockBanner() {
   paragraph.style.margin = '0';
   paragraph.style.fontSize = '14px';
   paragraph.className = 'text-sm';
-  paragraph.innerHTML = '<strong>AdBlocker:</strong> Hidden to filter probable ad content.';
+  paragraph.innerHTML = '<strong>RugBlocK:</strong> Hidden to filter probable ad comments.';
 
   innerDiv.appendChild(iconImg);
   innerDiv.appendChild(paragraph);
@@ -275,12 +275,12 @@ async function injectAdBlocker() {
       const hideMessagesOn = localStorage.getItem(LOCAL_STORAGE_HIDE_KEY) === '1';
 
       const adBanner = createAdBlockBanner();
-      adBanner.style.display = hideMessagesOn ? 'none' : '';
-      spaceY4.style.display = hideMessagesOn ? '' : 'none';
+      adBanner.style.display = hideMessagesOn ? '' : 'none';
+      spaceY4.style.display = hideMessagesOn ? 'none' : '';
 
       const hideToggle = createSlider(hideMessagesOn, (enabled) => {
-        spaceY4.style.display = enabled ? '' : 'none';
-        adBanner.style.display = enabled ? 'none' : '';
+        spaceY4.style.display = enabled ? 'none' : '';
+        adBanner.style.display = enabled ? '' : 'none';
         localStorage.setItem(LOCAL_STORAGE_HIDE_KEY, enabled ? '1' : '0');
       }, 'Toggle visibility of suspected ad messages.');
 
@@ -336,7 +336,7 @@ function createGambleReminder() {
 
   wrapper.innerHTML = `
   <div style="
-    background-color: #f8d7da; 
+    background-color: #5c1518; 
     border: 1.5px solid #e7000b; 
     border-radius: 12px; 
     padding: 16px 24px; 
@@ -346,7 +346,7 @@ function createGambleReminder() {
     max-width: 480px;
   ">
     <div style="
-      color: #721c24; 
+      color: #FFF; 
       font-size: 14px; 
       line-height: 1.4; 
       font-weight: 600;
@@ -354,7 +354,7 @@ function createGambleReminder() {
       min-width: 0;
     ">
       <strong>Reminder:</strong> Don't forget to 
-      <a href="https://rugplay.com/gambling" target="_blank" rel="noopener noreferrer" style="color: #721c24; text-decoration: underline;">
+      <a href="/gambling" style="color: #FFF; text-decoration: underline;">
         gamble
       </a> away your life savings!
     </div>
@@ -382,3 +382,8 @@ setInterval(() => {
   if (enabled) createGambleReminder();
 }, GAMBLE_REMINDER_INTERVAL);
 
+
+
+// This code is licensed under the MIT License (MIT). And is provided "as is", without warranty of any kind, express or implied. Use at your own risk.
+
+// 𝓜𝓪𝓭𝓮 𝔀𝓲𝓽𝓱 ❤️𝓫𝔂 𝓜𝓪𝔁
